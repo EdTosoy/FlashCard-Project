@@ -1,9 +1,5 @@
 import React from "react";
 
-import notification from "./Media/notification.svg";
-import person from "./Media/person.svg";
-import chevron from "./Media/chevron.svg";
-
 import "./Settings.scss";
 
 export default function Settings() {
