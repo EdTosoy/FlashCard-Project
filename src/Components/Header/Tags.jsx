@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
 
 import "./Tags.scss";
 
@@ -7,25 +8,25 @@ export default function Tags() {
     {
       id: 1,
       title: "Home",
-      isActive: true,
+      url: "/home",
     },
     {
       id: 2,
       title: "Goals",
-      isActive: false,
+      url: "/goals",
     },
     {
       id: 3,
       title: "Journals",
-      isActive: false,
+      url: "/journals",
     },
   ];
   return (
     <div className="tags">
-      {tags.map(({ id, title, isActive }) => (
-        <div className={isActive ? "active tag" : "tag"} key={id}>
-          <p>{title}</p>
-        </div>
+      {tags.map(({ id, title, url }) => (
+        <NavLink to={url} activeClassName="active" className="tag" key={id}>
+          {title}
+        </NavLink>
       ))}
     </div>
   );
