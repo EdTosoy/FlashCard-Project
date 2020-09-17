@@ -1,6 +1,4 @@
-import React, { useRef } from "react";
-
-import search from "./Media/search.svg";
+import React from "react";
 
 import "./Search.scss";
 
