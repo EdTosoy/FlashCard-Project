@@ -4,9 +4,9 @@ import Logo from "./Logo";
 import Tags from "./Tags";
 import Search from "./Search";
 import Settings from "./Settings";
+import Notification from "./Notification";
 
 import "./Header.scss";
-import Notification from "./Notification";
 
 export default function Header() {
   return (

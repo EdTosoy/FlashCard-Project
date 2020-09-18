@@ -8,7 +8,7 @@ export default function Tags() {
     {
       id: 1,
       title: "Home",
-      url: "/home",
+      url: "/",
     },
     {
       id: 2,
@@ -24,7 +24,7 @@ export default function Tags() {
   return (
     <div className="tags">
       {tags.map(({ id, title, url }) => (
-        <NavLink to={url} activeClassName="active" className="tag" key={id}>
+        <NavLink exact to={url} activeClassName="active" className="tag" key={id}>
           {title}
         </NavLink>
       ))}

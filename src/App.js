@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.scss";
 import Header from "./Components/Header/Header";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
 
 import { HomeProvider } from "./ContextAPI/homeContext"
 
@@ -10,7 +10,10 @@ function App() {
     <HomeProvider>
       <Router>
         <div className="App">
-          <Header />
+          <Switch >
+            <Route exact path="/" component={Header}/>
+            <Route exact path="/:tag" component={Header}/>
+          </Switch>
         </div>
       </Router>
     </HomeProvider>
