@@ -1,0 +1,12 @@
+.notification {
+  z-index: -1;
+  background-color: white;
+  height: 100vh;
+  width: 350px;
+  display: grid;
+  align-content: center;
+  position: fixed;
+  top: 5.3em;
+  left: 105vw;
+  box-shadow: -5px 5px 10px rgb(211, 211, 211);
+}

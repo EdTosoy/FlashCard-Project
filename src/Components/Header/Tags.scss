@@ -1,17 +1,18 @@
 .tags {
   display: flex;
   .tag {
+    display: flex;
+    align-items: center;
     cursor: pointer;
-    padding: 0.5em 1em;
-    margin: 0 5px;
-    font-size: 1.3em;
-    border-radius: 24px;
-    -webkit-border-radius: 24px;
-    -moz-border-radius: 24px;
-    -ms-border-radius: 24px;
-    -o-border-radius: 24px;
+    padding: 0 1em;
+    font-size: 1.2em;
+    border-radius: 27px;
+    -webkit-border-radius: 27px;
+    -moz-border-radius: 27px;
+    -ms-border-radius: 27px;
+    -o-border-radius: 27px;
     &:hover {
-      background-color: gray;
+      background-color: #efefef;
     }
   }
   .active {

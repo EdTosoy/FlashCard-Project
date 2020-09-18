@@ -1,6 +1,7 @@
 .search {
   flex-grow: 1;
   position: relative;
+  margin: 0 5px;
 
   input {
     font-size: 1.3em;
@@ -13,7 +14,7 @@
     -moz-border-radius: 27px;
     -ms-border-radius: 27px;
     -o-border-radius: 27px;
-    padding: 0.6em 1em;
+    padding: 0 1em;
     padding-left: 3rem;
     &:focus {
       border: 1px solid skyblue;

@@ -7,7 +7,7 @@ export default function Logo() {
   return (
     <div className="logo">
       <div className="logo-wrapper">
-        <a href="/home">
+        <a href="/">
           <img src={logo} alt="logo" />
         </a>
       </div>
