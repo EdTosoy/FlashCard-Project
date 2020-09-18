@@ -1,4 +1,5 @@
 .notification {
+<<<<<<< HEAD
   z-index: -1;
   background-color: white;
   height: 100vh;
@@ -10,3 +11,16 @@
   left: 105vw;
   box-shadow: -5px 5px 10px rgb(211, 211, 211);
 }
+=======
+    z-index: 0;
+    background-color: white;
+    height: 100vh;
+    width: 350px;
+    display: grid;
+    align-content: center ;
+    position: fixed;
+    top: 5.3em;
+    left: 100vw;
+    box-shadow: -5px 5px 10px  rgb(211, 211, 211);
+}
+>>>>>>> f28d9a7798f300437f344e40e616e2162f824b5f
