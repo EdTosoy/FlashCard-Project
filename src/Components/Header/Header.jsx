@@ -6,6 +6,7 @@ import Search from "./Search";
 import Settings from "./Settings";
 
 import "./Header.scss";
+import Notification from "./Notification";
 
 export default function Header() {
   return (
@@ -15,6 +16,7 @@ export default function Header() {
         <Tags />
         <Search />
         <Settings />
+        <Notification/>
       </div>
     </header>
   );

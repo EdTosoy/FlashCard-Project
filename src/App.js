@@ -3,13 +3,17 @@ import "./App.scss";
 import Header from "./Components/Header/Header";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
+import { HomeProvider } from "./ContextAPI/homeContext"
+
 function App() {
   return (
-    <Router>
-      <div className="App">
-        <Header />
-      </div>
-    </Router>
+    <HomeProvider>
+      <Router>
+        <div className="App">
+          <Header />
+        </div>
+      </Router>
+    </HomeProvider>
   );
 }
 
