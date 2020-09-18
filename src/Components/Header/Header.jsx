@@ -17,12 +17,8 @@ export default function Header() {
         <Tags />
         <Search />
         <Settings />
-<<<<<<< HEAD
         <Notification />
         <DropDown />
-=======
-        <Notification/>
->>>>>>> f28d9a7798f300437f344e40e616e2162f824b5f
       </div>
     </header>
   );

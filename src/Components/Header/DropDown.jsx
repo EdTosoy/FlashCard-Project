@@ -15,7 +15,13 @@ export default function DropDown() {
   return (
     <div className="drop-down" style={dropDownStyle}>
       <p>Account</p>
-      <li>Dark Theme</li>
+      <li className="theme">
+        <div>Dark Theme</div>
+        <div className="theme-tgl">
+          <input class="tgl tgl-ios" id="cb2" type="checkbox" />
+          <label class="tgl-btn" for="cb2"></label>
+        </div>
+      </li>
       <li>Add another account</li>
       <p>More options</p>
       <li>Settings</li>

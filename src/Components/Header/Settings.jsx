@@ -1,7 +1,6 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 
-<<<<<<< HEAD
 import { HomeContext } from "../../ContextAPI/homeContext";
 import "./Settings.scss";
 
@@ -20,21 +19,6 @@ export default function Settings() {
     SetdropDownDisplay((preValue) => !preValue);
   };
   const user = Math.floor(Math.random() * 10000);
-=======
-import { HomeContext } from "../../ContextAPI/homeContext"
-import "./Settings.scss";
-
-export default function Settings() {
-  const [notificationDisplay, SetnotificationDisplay, dropDropDisplay, SetdropDownDisplay] = useContext(HomeContext)
-  const notificationClick = () => {
-    SetnotificationDisplay(preValue => !preValue)
-  }
-  const dropDownClick = () => {
-    SetdropDownDisplay(preValue => !preValue)
-    console.log(dropDropDisplay)
-  }
-  const user = Math.floor(Math.random() * 10000)
->>>>>>> f28d9a7798f300437f344e40e616e2162f824b5f
   return (
     <div className="settings">
       <li onClick={notificationClick}>
