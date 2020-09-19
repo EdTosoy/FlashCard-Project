@@ -4,11 +4,13 @@ import AddBtn from "../../Components/AddBtn/AddBtn";
 import Header from "../../Components/Header/Header";
 
 import "./Home.scss";
+import Showcase from "./Showcase";
 
 export default function Home() {
   return (
     <div className="home">
       <Header />
+      <Showcase />
       <AddBtn />
     </div>
   );

@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import { HomeProvider } from "./ContextAPI/homeContext";
 import Home from "./Pages/Home/Home";
-import Auth from "./Pages/Home/Auth/Auth";
+import Auth from "./Pages/Auth/Auth";
 
 function App() {
   return (
