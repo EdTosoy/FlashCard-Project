@@ -1,8 +1,11 @@
 header {
+  height: 5.5em;
+  width: 100vw;
   z-index: 9999;
   padding: 1em 0;
   box-shadow: 0 3px 3px -2.6px gray;
   font-size: 1rem;
+  background-color: white;
   .header-content {
     display: flex;
   }

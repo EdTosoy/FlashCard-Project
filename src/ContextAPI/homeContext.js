@@ -5,6 +5,7 @@ export const HomeContext = createContext();
 export const HomeProvider = (props) => {
   const [notificationDisplay, SetnotificationDisplay] = useState(false);
   const [dropDownDisplay, SetdropDownDisplay] = useState(false);
+  const [addModalDisplay, setAddModalDisplay] = useState(false);
 
   return (
     <HomeContext.Provider
@@ -13,6 +14,8 @@ export const HomeProvider = (props) => {
         SetnotificationDisplay,
         dropDownDisplay,
         SetdropDownDisplay,
+        addModalDisplay,
+        setAddModalDisplay,
       ]}
     >
       {props.children}

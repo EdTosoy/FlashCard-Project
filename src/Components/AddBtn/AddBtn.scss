@@ -1,0 +1,28 @@
+.add-btn {
+  cursor: pointer;
+  display: grid;
+  place-content: center;
+  position: fixed;
+  bottom: 5em;
+  right: 2.5em;
+  width: 40px;
+  height: 40px;
+  background-color: #cc2200;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  box-shadow: 0 3px 5px gray;
+  &:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+  }
+  ion-icon {
+    color: white;
+    font-size: 2em;
+  }
+}

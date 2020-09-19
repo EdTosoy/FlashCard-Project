@@ -5,6 +5,7 @@ import "./Notification.scss";
 
 export default function Notification() {
   const [notificationDisplay, SetnotificationDisplay] = useContext(HomeContext);
+  console.log(HomeContext);
   const notificationStyle = notificationDisplay
     ? { left: "calc(100vw - 350px)" }
     : null;
