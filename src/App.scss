@@ -1,11 +1,7 @@
-header,
 .home {
   display: grid;
   grid-template-columns:
     minmax(1rem, 1fr)
     minmax(1rem, 95vw)
     minmax(1rem, 1fr);
-}
-.header-content {
-  grid-column: 2/-2;
 }

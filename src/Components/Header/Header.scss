@@ -1,12 +1,15 @@
 header {
-  height: 5.5em;
+  position: fixed;
+  // top: 0px;
   width: 100vw;
-  z-index: 9999;
-  padding: 1em 0;
-  box-shadow: 0 3px 3px -2.6px gray;
-  font-size: 1rem;
-  background-color: white;
+  z-index: 10;
   .header-content {
+    grid-column: 2/-2;
+    box-shadow: 0 3px 3px -2.6px gray;
+    font-size: 1rem;
     display: flex;
+    height: 5.5em;
+    background-color: white;
+    padding: 1em;
   }
 }
