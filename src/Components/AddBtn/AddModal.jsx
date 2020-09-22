@@ -7,7 +7,7 @@ export default function AddModal() {
   const handleClick = (e) => {
     e.stopPropagation();
   };
-  const darkTheme = useContext(HomeContext);
+  const { darkTheme } = useContext(HomeContext);
   return (
     <div
       className={`add-modal ${darkTheme && "dark-add-modal"}`}
