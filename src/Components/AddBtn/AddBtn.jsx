@@ -6,13 +6,13 @@ import "./AddBtn.scss";
 import AddModalWrapper from "./AddModalWrapper";
 
 export default function AddBtn() {
-  const { setAddModalDisplay } = useContext(HomeContext);
+  const { setAddModalDisplay, darkTheme } = useContext(HomeContext);
   const handleClick = () => {
     setAddModalDisplay((preValue) => !preValue);
   };
   return (
     <div className="add-wrapper" onClick={handleClick}>
-      <div className="add-btn">
+      <div className={`add-btn ${darkTheme && "dark-add-btn"} `  }>
         <ion-icon name="add-outline"></ion-icon>
       </div>
       <AddModalWrapper />
