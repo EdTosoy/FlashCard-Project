@@ -2,6 +2,11 @@
   flex-grow: 1;
   position: relative;
   margin: 0 5px;
+  border-radius: 27px;
+  -webkit-border-radius: 27px;
+  -moz-border-radius: 27px;
+  -ms-border-radius: 27px;
+  -o-border-radius: 27px;
 
   input {
     font-size: 1.3em;

@@ -5,12 +5,7 @@ import { HomeContext } from "../../ContextAPI/homeContext";
 import "./DropDown.scss";
 
 export default function DropDown() {
-  const [
-    notificationDisplay,
-    SetnotificationDisplay,
-    dropDownDisplay,
-    SetdropDownDisplay,
-  ] = useContext(HomeContext);
+  const { dropDownDisplay } = useContext(HomeContext);
   const dropDownStyle = dropDownDisplay ? { display: "block" } : null;
   return (
     <div className="drop-down" style={dropDownStyle}>

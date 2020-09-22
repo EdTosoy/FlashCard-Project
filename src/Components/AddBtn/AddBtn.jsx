@@ -6,14 +6,7 @@ import "./AddBtn.scss";
 import AddModalWrapper from "./AddModalWrapper";
 
 export default function AddBtn() {
-  const [
-    notificationDisplay,
-    SetnotificationDisplay,
-    dropDownDisplay,
-    SetdropDownDisplay,
-    addModalDisplay,
-    setAddModalDisplay,
-  ] = useContext(HomeContext);
+  const { setAddModalDisplay } = useContext(HomeContext);
   const handleClick = () => {
     setAddModalDisplay((preValue) => !preValue);
   };

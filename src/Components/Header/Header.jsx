@@ -1,17 +1,19 @@
-import React from "react";
+import React, { useContext } from "react";
 
 import Logo from "./Logo";
 import Tags from "./Tags";
 import Search from "./Search";
 import Settings from "./Settings";
 import Notification from "./Notification";
+import DropDown from "./DropDown";
+import { HomeContext } from "../../ContextAPI/homeContext";
 
 import "./Header.scss";
-import DropDown from "./DropDown";
 
 export default function Header() {
+  const { darkTheme } = useContext(HomeContext);
   return (
-    <header>
+    <header className={darkTheme && "header-dark-theme"}>
       <div className="header-content">
         <Logo />
         <Tags />

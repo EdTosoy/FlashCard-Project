@@ -5,12 +5,9 @@ import { HomeContext } from "../../ContextAPI/homeContext";
 import "./Settings.scss";
 
 export default function Settings() {
-  const [
-    notificationDisplay,
-    SetnotificationDisplay,
-    dropDownDisplay,
-    SetdropDownDisplay,
-  ] = useContext(HomeContext);
+  const { SetnotificationDisplay, SetdropDownDisplay } = useContext(
+    HomeContext
+  );
 
   const notificationClick = () => {
     SetnotificationDisplay((preValue) => !preValue);
