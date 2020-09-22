@@ -1,19 +1,27 @@
-import React, { useContext } from "react";
+import React, { useContext} from "react";
 
 import { HomeContext } from "../../ContextAPI/homeContext";
 
 import "./DropDown.scss";
 
 export default function DropDown() {
-  const { dropDownDisplay } = useContext(HomeContext);
+  const { dropDownDisplay, setDarkTheme } = useContext(HomeContext);
   const dropDownStyle = dropDownDisplay ? { display: "block" } : null;
+  const handleChange = () => {
+    setDarkTheme((prevValue) => !prevValue);
+  };
   return (
     <div className="drop-down" style={dropDownStyle}>
       <p>Account</p>
       <li className="theme">
         <div>Dark Theme</div>
         <div className="theme-tgl">
-          <input className="tgl tgl-ios" id="cb2" type="checkbox" />
+          <input
+            className="tgl tgl-ios"
+            id="cb2"
+            type="checkbox"
+            onChange={handleChange}
+          />
           <label className="tgl-btn" htmlFor="cb2"></label>
         </div>
       </li>

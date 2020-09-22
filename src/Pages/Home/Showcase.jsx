@@ -1,13 +1,13 @@
-import React,  { useContext } from "react";
+import React, { useContext } from "react";
 
-import { HomeContext } from "../../ContextAPI/homeContext"
+import { HomeContext } from "../../ContextAPI/homeContext";
 
 import "./Showcase.scss";
 
 export default function Showcase() {
-  const darkTheme = useContext(HomeContext)
+  const { darkTheme } = useContext(HomeContext);
   return (
-    <div className={darkTheme ? "showcase-dark-theme" : "showcase"}>
+    <div className={`showcase ${darkTheme && "dark-showcase"}`}>
       <div className="card">card</div>
     </div>
   );
