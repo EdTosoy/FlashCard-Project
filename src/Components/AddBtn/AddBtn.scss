@@ -1,13 +1,12 @@
-.div {
-  z-index: 1;
+.add-wrapper {
+  position: fixed;
+  bottom: 5em;
+  right: 2.5em;
   .add-btn {
     z-index: 1;
     cursor: pointer;
     display: grid;
     place-content: center;
-    position: fixed;
-    bottom: 5em;
-    right: 2.5em;
     width: 40px;
     height: 40px;
     background-color: #cc2200;

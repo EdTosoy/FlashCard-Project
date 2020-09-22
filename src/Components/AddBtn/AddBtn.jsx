@@ -11,7 +11,7 @@ export default function AddBtn() {
     setAddModalDisplay((preValue) => !preValue);
   };
   return (
-    <div onClick={handleClick}>
+    <div className="add-wrapper" onClick={handleClick}>
       <div className="add-btn">
         <ion-icon name="add-outline"></ion-icon>
       </div>
