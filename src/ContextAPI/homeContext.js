@@ -3,7 +3,7 @@ import React, { useState, createContext } from "react";
 export const HomeContext = createContext();
 
 
-export const HomeProvider = (props) => {
+export const HomeProvider = ({children}) => {
   const [notificationDisplay, SetnotificationDisplay] = useState(false);
   const [dropDownDisplay, SetdropDownDisplay] = useState(false);
   const [addModalDisplay, setAddModalDisplay] = useState(false);
@@ -26,7 +26,7 @@ export const HomeProvider = (props) => {
     >
 
 
-      {props.children}
+      {children}
     </HomeContext.Provider>
   );
 };

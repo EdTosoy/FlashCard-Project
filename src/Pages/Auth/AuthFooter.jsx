@@ -1,8 +1,8 @@
 import React from 'react'
 
-import "./SignInForm"
+import "./AuthFooter.scss"
 
-export default function SignInForm() {
+export default function AuthFooter() {
     return (
         <div>
             
