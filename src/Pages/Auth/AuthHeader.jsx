@@ -1,11 +1,10 @@
 import React from 'react'
-
-// import "./"
+import AuthNavigation from './AuthNavigation'
 
 export default function AuthHeader() {
     return (
-        <div>
-            
+        <div className="auth-header">
+            <AuthNavigation/>
         </div>
     )
 }
