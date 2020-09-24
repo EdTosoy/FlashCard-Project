@@ -10,8 +10,10 @@ export default function AuthLogo() {
         <a href="/">
           <img src={logo} alt="logo" />
         </a>
+        <p>
+          Flash<span>Card</span>
+        </p>
       </div>
-      
     </div>
   );
 }
