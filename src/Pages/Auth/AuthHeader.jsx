@@ -1,13 +1,13 @@
-import React from 'react'
-import Logo from "../../Components/Header/Logo"
-import AuthNavigation from './AuthNavigation'
+import React from "react";
+
+import AuthLogo from "./AuthLogo";
+import AuthNavigation from "./AuthNavigation";
 
 export default function AuthHeader() {
-    return (
-        <div className="auth-header">
-            <Logo/>
-            <AuthNavigation/>
-        </div>
-    )
+  return (
+    <div className="auth-header">
+      <AuthLogo />
+      <AuthNavigation />
+    </div>
+  );
 }
-34
