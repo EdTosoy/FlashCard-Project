@@ -13,8 +13,8 @@ function App() {
         <div className="App">
           <Switch>
             <Route exact path="/" component={Home} />
+            <Route exact path="/auth" component={Auth} />
             <Route exact path="/:tag" component={Home} />
-            <Router exact path="/auth" components={Auth} />
           </Switch>
         </div>
       </Router>

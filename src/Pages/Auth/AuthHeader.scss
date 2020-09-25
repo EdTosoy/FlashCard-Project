@@ -1,0 +1,16 @@
+.auth-header {
+  position: fixed;
+  width: 100vw;
+  z-index: 10;
+  display: grid;
+  grid-template-columns: repeat(10, minmax(1rem, 1fr));
+  box-shadow: 0 3px 3px -2.6px gray;
+  .header-content {
+    grid-column: 2/-2;
+    font-size: 1rem;
+    display: flex;
+    height: 5.5em;
+    background-color: white;
+    padding: 1em;
+  }
+}

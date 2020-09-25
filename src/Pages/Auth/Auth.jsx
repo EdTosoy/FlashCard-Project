@@ -8,7 +8,6 @@ export default function Auth() {
   return (
     <div className="auth">
       <AuthHeader />
-
       <AuthFooter />
     </div>
   );
