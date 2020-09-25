@@ -1,0 +1,9 @@
+.auth-footer {
+  margin-top: 90vh;
+  grid-column: 2/-2;
+  display: flex;
+  justify-content: center;
+  li {
+      margin: 0 .5em;
+  }
+}
