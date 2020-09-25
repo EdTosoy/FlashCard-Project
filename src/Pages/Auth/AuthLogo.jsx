@@ -1,6 +1,7 @@
 import React from "react";
 
 import logo from "./Media/logo.svg";
+
 import "./AuthLogo.scss";
 
 export default function AuthLogo() {
