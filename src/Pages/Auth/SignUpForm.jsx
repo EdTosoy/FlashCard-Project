@@ -4,8 +4,8 @@ import "./SignUpForm.scss"
 
 export default function SignUpForm({setAuthStatus}) {
     return (
-        <div>
-            Signupform
-        </div>
+        <form action="">
+            singIn
+        </form>
     )
 }

@@ -1,6 +1,15 @@
 main {
-    grid-column: 2/-2;
-    display: grid;
-    place-content: center;
-    grid-template-columns: 1fr/ 1fr;
+  grid-column: 2/-2;
+  background-color: gray;
+  display: grid;
+  place-content: center;
+  grid-template-columns: repeat(10, minmax(1rem, 1fr));
+  margin-top: 100px;
+
+  .text {
+    grid-column: 2/5;
+  }
+  form {
+    grid-column: -5/-2;
+  }
 }

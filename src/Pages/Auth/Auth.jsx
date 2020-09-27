@@ -13,9 +13,11 @@ export default function Auth() {
       <AuthHeader />
 
       <main>
-        <h1>Memories</h1>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
-        <h2>Read More</h2>
+        <div className="text">
+          <h1>Memories</h1>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+          <h2>Read More</h2>
+        </div>
 
         {authStatus ? (
           <SignInForm setAuthStatus={setAuthStatus} />

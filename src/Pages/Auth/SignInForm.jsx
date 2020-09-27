@@ -4,8 +4,8 @@ import "./SignInForm"
 
 export default function SignInForm({setAuthStatus}) {
     return (
-        <div>
-            siginForm
-        </div>
+        <form action="">
+            singup
+        </form>
     )
 }

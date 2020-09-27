@@ -1,12 +1,25 @@
-.logo {
+.auth-logo {
   display: flex;
   align-items: center;
   .logo-wrapper {
-    margin-right: 0.8em;
-    width: 35px;
-    height: 35px;
+    display: flex;
+    align-items: center;
+    a {
+      width: 35px;
+      height: 35px;
+      margin-right: 0.8em;
+    }
     img {
       width: 100%;
+    }
+
+    p {
+      font-size: 1.3em;
+      font-weight: bold;
+
+      span {
+        color: #cc2200;
+      }
     }
   }
 }
