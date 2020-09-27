@@ -1,0 +1,6 @@
+main {
+    grid-column: 2/-2;
+    display: grid;
+    place-content: center;
+    grid-template-columns: 1fr/ 1fr;
+}

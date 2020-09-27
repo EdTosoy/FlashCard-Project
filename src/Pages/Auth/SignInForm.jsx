@@ -5,7 +5,7 @@ import "./SignInForm"
 export default function SignInForm({setAuthStatus}) {
     return (
         <div>
-            
+            siginForm
         </div>
     )
 }
