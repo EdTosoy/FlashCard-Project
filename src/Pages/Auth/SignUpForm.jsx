@@ -20,6 +20,8 @@ export default function SignUpForm({ setAuthStatus }) {
         placeholder="Password"
       />
       <button type="submit">Sign In</button>
+      <button>Continue with Google</button>
+      <p>Have no Account? <span>Sign Up</span></p>
     </form>
   );
 }

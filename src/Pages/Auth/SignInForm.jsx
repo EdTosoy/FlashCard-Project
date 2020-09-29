@@ -12,6 +12,8 @@ export default function SignInForm({ setAuthStatus }) {
       <label htmlFor="password">Password</label>
       <input type="password" name="password" id="password" />
       <button type="submit">Sign Up</button>
+      <button>Continue with Google</button>
+      <p>Already have an Account? <span>Sign In</span></p>
     </form>
   );
 }
