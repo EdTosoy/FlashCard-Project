@@ -1,11 +1,25 @@
-import React from 'react'
+import React from "react";
 
-import "./SignUpForm.scss"
+import "./SignUpForm.scss";
 
-export default function SignUpForm({setAuthStatus}) {
-    return (
-        <form action="">
-            singIn
-        </form>
-    )
+export default function SignUpForm({ setAuthStatus }) {
+  return (
+    <form action="">
+      <label>UserName</label>
+      <input
+        type="text"
+        name="username"
+        id="username"
+        placeholder="Email or phone number"
+      />
+      <label>Password</label>
+      <input
+        type="password"
+        name="password"
+        id="password"
+        placeholder="Password"
+      />
+      <button type="submit">Sign In</button>
+    </form>
+  );
 }

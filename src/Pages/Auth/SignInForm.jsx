@@ -5,7 +5,10 @@ import "./SignInForm"
 export default function SignInForm({setAuthStatus}) {
     return (
         <form action="">
-            singup
+            <label>UserName</label>
+            <input type="text" name="username" id="username" placeholder="Email or phone number"/>
+            <label>Password</label>
+            <input type="password" name="password" id="password" placeholder="Password"/>
         </form>
     )
 }
