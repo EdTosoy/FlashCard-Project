@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useState, useContext, useEffect } from "react";
 
 import { HomeContext } from "../../ContextAPI/homeContext";
 
@@ -6,21 +6,23 @@ import "./Showcase.scss";
 
 export default function Showcase() {
   const { darkTheme } = useContext(HomeContext);
-  // const images = fetch(
-  //   "https://jsonplaceholder.typicode.com/photos/?_limit=20"
-  // ).then((response) => response.json());
-  // let content = false;
-  // while (!images) {
-  //   setInterval(() => {
-  //     content = images.map(({ url }) => <div className="grid-item">{url}</div>);
-  //     console.log(content);
-  //   }, 1000);
-  // }
-  // console.log(content);
+
+  const [imageData, setimageData] = useState([]);
+  useEffect(() => {
+    fetch("https://jsonplaceholder.typicode.com/photos/?_limit=20")
+      .then((response) => response.json())
+      .then((data) => setimageData(data));
+  }, []);
+
+  // console.log(test);
 
   return (
     <div className={`showcase ${darkTheme && "dark-showcase"}`}>
-      {/* {content} */}
+      {imageData.map(({ url }) => (
+        <div className="grid-item">
+          <img src={url} alt="card" />
+        </div>
+      ))}
       <div className="grid">
         <div className="grid-item">...</div>
         <div className="grid-item grid-item--width2">...</div>
