@@ -1,32 +1,32 @@
 import React, { useContext } from "react";
 
-import Masonry from "react-masonry-css";
-
 import { HomeContext } from "../../ContextAPI/homeContext";
 
 import "./Showcase.scss";
 
 export default function Showcase() {
   const { darkTheme } = useContext(HomeContext);
-  const breakpointColumnsObj = {
-    default: 4,
-    1100: 3,
-    700: 2,
-    500: 1,
-  };
+  // const images = fetch(
+  //   "https://jsonplaceholder.typicode.com/photos/?_limit=20"
+  // ).then((response) => response.json());
+  // let content = false;
+  // while (!images) {
+  //   setInterval(() => {
+  //     content = images.map(({ url }) => <div className="grid-item">{url}</div>);
+  //     console.log(content);
+  //   }, 1000);
+  // }
+  // console.log(content);
+
   return (
     <div className={`showcase ${darkTheme && "dark-showcase"}`}>
-      {/* <div className="card">card</div> */}
-      <Masonry
-        breakpointCols={breakpointColumnsObj}
-        className="my-masonry-grid"
-        columnClassName="my-masonry-grid_column"
-      >
-        <div>My Element</div>
-        <div>My Element</div>
-        <div>My Element</div>
-        <div>My Element</div>
-      </Masonry>
+      {/* {content} */}
+      <div className="grid">
+        <div className="grid-item">...</div>
+        <div className="grid-item grid-item--width2">...</div>
+        <div className="grid-item">...</div>
+        ...
+      </div>
     </div>
   );
 }
