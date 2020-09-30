@@ -7,7 +7,7 @@ export const HomeProvider = ({children}) => {
   const [notificationDisplay, SetnotificationDisplay] = useState(false);
   const [dropDownDisplay, SetdropDownDisplay] = useState(false);
   const [addModalDisplay, setAddModalDisplay] = useState(false);
-  const [darkTheme, setDarkTheme] = useState(false)
+  const [darkTheme, setDarkTheme] = useState(true)
 
   return (
     <HomeContext.Provider
