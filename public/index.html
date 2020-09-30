@@ -42,20 +42,17 @@
   </body>
   <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
   <script>
-    var elem = document.querySelector('.grid');
-    var msnry = new Masonry( elem, {
-      // options
-      itemSelector: '.grid-item',
-      columnWidth: 200
+    var elem = document.querySelector(".grid");
+    var msnry = new Masonry(elem, {
+      itemSelector: ".grid-item",
+      columnWidth: 500,
+      gutter: 20,
     });
 
-    // element argument can be a selector string
-    //   for an individual element
-    var msnry = new Masonry( '.grid', {
+    var msnry = new Masonry(".grid", {
       // options
     });
   </script>
-    
+
   <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
-  
 </html>

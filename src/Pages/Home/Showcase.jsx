@@ -14,20 +14,12 @@ export default function Showcase() {
       .then((data) => setimageData(data));
   }, []);
 
-  // console.log(test);
-
   return (
     <div className={`showcase ${darkTheme && "dark-showcase"}`}>
-      {imageData.map(({ url }) => (
-        <div className="grid-item">
-          <img src={url} alt="card" />
-        </div>
-      ))}
       <div className="grid">
-        <div className="grid-item">...</div>
-        <div className="grid-item grid-item--width2">...</div>
-        <div className="grid-item">...</div>
-        ...
+        {imageData.map(({ url }) => (
+          <img className="grid-item" src={url} alt="card" />
+        ))}
       </div>
     </div>
   );
