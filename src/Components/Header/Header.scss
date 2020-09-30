@@ -1,7 +1,7 @@
 header {
+  grid-column: 1/-1;
   position: sticky;
   top: 0;
-  width: 100vw;
   z-index: 10;
   .header-content {
     grid-column: 2/-2;
