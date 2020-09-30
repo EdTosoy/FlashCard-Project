@@ -2,21 +2,18 @@
   grid-column: 1/-1;
   background-color: white;
   padding: 5em;
+  // width: 1000px;
 }
 .dark-showcase {
   background-color: #242526;
 }
 
 .grid-item {
-  width: calc(20% - 4px);
-  height: 400px;
-  border-radius: 8px;
-  margin: 0 2px;
+  width: calc(16.666666666666666666666666666667%);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding: 8px;
 }
-.grid-item img {
-  width: auto;
-}
-
-.grid {
-  place-content: center;
-}
+// .grid-item img {
+//   width: auto;
+// }
