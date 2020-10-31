@@ -7,7 +7,7 @@ import SignInForm from "./SignInForm";
 import SignUpForm from "./SignUpForm";
 
 export default function Auth() {
-  const [authStatus, setAuthStatus] = useState(false);
+  const [authStatus, setAuthStatus] = useState(true);
   return (
     <div className="auth">
       <AuthHeader />
