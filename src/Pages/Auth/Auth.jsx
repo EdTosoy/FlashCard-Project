@@ -15,7 +15,9 @@ export default function Auth() {
       <main>
         <div className="text">
           <h1>Memories</h1>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+          <p>
+            Save lasting memories, stories and photos with family and friends.
+          </p>
           <h2>Read More</h2>
         </div>
 

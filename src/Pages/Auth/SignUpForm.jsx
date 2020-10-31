@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./SignUpForm.scss";
+import "./SignUpSignInForm.scss";
 
 export default function SignUpForm({ setAuthStatus }) {
   const handleClick = () => {

@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./SignInForm.scss";
+import "./SignUpSignInForm.scss";
 
 export default function SignInForm({ setAuthStatus }) {
   const handleClick = () => {
@@ -25,7 +25,7 @@ export default function SignInForm({ setAuthStatus }) {
       <button>Continue with Google</button>
       <p>
         Have no Account? <span onClick={handleClick}>Sign Up</span>
-      </p>  
+      </p>
     </form>
   );
 }
