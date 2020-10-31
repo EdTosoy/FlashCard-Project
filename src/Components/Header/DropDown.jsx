@@ -1,4 +1,5 @@
-import React, { useContext} from "react";
+import React, { useContext } from "react";
+import { Link } from "react-router-dom";
 
 import { HomeContext } from "../../ContextAPI/homeContext";
 
@@ -31,7 +32,9 @@ export default function DropDown() {
       <li>Install the Chrome app</li>
       <li>Get help</li>
       <li>See terms and privacy</li>
-      <li>Log out</li>
+      <li>
+        <Link to="/auth">Log out</Link>
+      </li>
     </div>
   );
 }

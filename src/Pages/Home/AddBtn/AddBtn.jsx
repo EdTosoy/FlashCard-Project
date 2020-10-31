@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 
-import { HomeContext } from "../../ContextAPI/homeContext";
+import { HomeContext } from "../../../ContextAPI/homeContext";
 
 import "./AddBtn.scss";
 import AddModalWrapper from "./AddModalWrapper";
@@ -12,7 +12,7 @@ export default function AddBtn() {
   };
   return (
     <div className="add-wrapper" onClick={handleClick}>
-      <div className={`add-btn ${darkTheme && "dark-add-btn"} `  }>
+      <div className={`add-btn ${darkTheme && "dark-add-btn"} `}>
         <ion-icon name="add-outline"></ion-icon>
       </div>
       <AddModalWrapper />

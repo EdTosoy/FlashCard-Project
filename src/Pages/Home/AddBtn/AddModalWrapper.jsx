@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 
-import { HomeContext } from "../../ContextAPI/homeContext";
+import { HomeContext } from "../../../ContextAPI/homeContext";
 
 import AddModal from "./AddModal";
 import "./AddModalWrapper.scss";
